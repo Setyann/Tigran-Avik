@@ -1,0 +1,1 @@
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.animate([{opacity:0,transform:'translateY(28px)'},{opacity:1,transform:'none'}],{duration:650,fill:'both',easing:'ease-out'})}),{threshold:.08});document.querySelectorAll('section>div,section figure,.serviceList article').forEach(x=>io.observe(x));

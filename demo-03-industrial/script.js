@@ -1,0 +1,1 @@
+const buttons=document.querySelectorAll('.projectTabs button'),items=document.querySelectorAll('.projectList article');buttons.forEach(b=>b.onclick=()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');items.forEach(i=>i.classList.toggle('hidden',b.dataset.filter!=='all'&&i.dataset.cat!==b.dataset.filter))});
